@@ -10,8 +10,8 @@
                         <div class="card-body text-center">
                             <h5 class="card-title"><?=$product['name'] ?></h5>
                             <p class="card-text ">$<?=$product['price'] ?></p>
-                            <a href="<?=base_url()?>products/view/<?=$product['product_id']?>" class="btn btn-primary">Preview</a>
-                            <a href="#" class="btn btn-primary">Add to cart</a>
+                            <a href="<?=base_url()?>products/view/<?=$product['product_id']?>" class="btn btn-secondary">Preview</a>
+                            <a href="#" class="btn btn-success">Add to cart</a>
                         </div>
                     </div>
                 </div>
