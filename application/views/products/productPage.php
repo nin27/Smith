@@ -2,7 +2,7 @@
 
 
 <div class="col-md-12">
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
     <?php foreach ($products as $product) : ?>
                 <div class="col-sm-4">
                     <div class="card" style="width: 18rem;">
