@@ -18,7 +18,7 @@ class Products extends CI_Controller{
         $data['title'] = 'Products';
         $data['page'] = strtoupper($page);
 
-        $data['product'] = $this->Product_model->get_all_product();
+        $data['products'] = $this->Product_model->get_all_product();
 
         $this->load->view('templates/header');
         $this->load->view('products/productPage', $data);
