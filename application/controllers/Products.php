@@ -16,11 +16,11 @@ class Products extends CI_Controller{
         // }
        
         $data['title'] = 'Products';
-        $data['page'] = strtoupper($page);
+        $data['page'] = ucfirst($page);
 
         $data['products'] = $this->Product_model->get_all_product();
 
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('products/all_products', $data);
         $this->load->view('templates/footer');
     }
@@ -30,9 +30,9 @@ class Products extends CI_Controller{
         $data['item'] = $this->Product_model->get_item($item);
 
 
-        $data['title'] = 'Products';
+        // $data['title'] = 'Products';
 
-        $this->load->view('templates/header');
+        $this->load->view('templates/header', $data);
         $this->load->view('products/view_product',$data);
         $this->load->view('templates/footer');
 
