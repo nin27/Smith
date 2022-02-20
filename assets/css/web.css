@@ -1,0 +1,9 @@
+
+body {
+    background-color: grey;
+}
+
+
+.slider.slider-horizontal{
+    width:200px; /* sample value - set it as you like*/
+  }
