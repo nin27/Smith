@@ -21,7 +21,20 @@ class Products extends CI_Controller{
         $data['products'] = $this->Product_model->get_all_product();
 
         $this->load->view('templates/header');
-        $this->load->view('products/productPage', $data);
+        $this->load->view('products/all_products', $data);
         $this->load->view('templates/footer');
+    }
+
+
+    public function viewItem($item){
+        $data['item'] = $this->Product_model->get_item($item);
+
+
+        $data['title'] = 'Products';
+
+        $this->load->view('templates/header');
+        $this->load->view('products/view_product',$data);
+        $this->load->view('templates/footer');
+
     }
 }
